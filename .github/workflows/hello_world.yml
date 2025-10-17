@@ -1,0 +1,13 @@
+name: Hello Workflow
+
+on: 
+  push:
+    branches:
+      - master   # Trigger on push to master branch
+
+jobs:
+  hello:                    # Job name (can be any name)
+    runs-on: ubuntu-latest  # Required runner
+    steps:
+      - name: Say Hello
+        run: echo "Hello GitHub Actions!"
