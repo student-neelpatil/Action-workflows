@@ -6,13 +6,11 @@ on:
       - master   # Trigger on push to master branch
 
 jobs:
-  hello:                    # Job name (can be any name)
-    runs-on: ubuntu-latest  # Required runner
+  hello:                    
+    runs-on: ubuntu-latest  
     steps:
       - name: Say Hello
         run: echo "Hello GitHub Actions!"
 
-      - name: "print the current date"
-        run: ech "data is 17th octobar"
-
-
+      - name: Current date
+        run: echo "date is 17th October"
