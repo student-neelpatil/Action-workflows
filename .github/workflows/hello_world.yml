@@ -13,6 +13,6 @@ jobs:
         run: echo "Hello GitHub Actions!"
 
       - name: "print the current date"
-        run: date
+        run: ech "data is 17th octobar"
 
 
