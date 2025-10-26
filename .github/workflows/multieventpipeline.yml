@@ -7,7 +7,7 @@ on:
     pull_request:
         branches:
             - master
-    workflow_dispatch:
+    workflow_dispatch: # to ru workflow manually
 
 jobs:
     on-push:
@@ -23,3 +23,10 @@ jobs:
         steps:
             - name: "Running on pull request"
               run: echo "running on pull request"       
+    
+    on-workflow_dispatch:
+        if: github.event_name == 'workflow_dispatch' #checks or conditions
+        runs-on: ubuntu-latest
+        steps:
+            - name: "pushing on master branch"
+              run: echo "Running on master branch"
