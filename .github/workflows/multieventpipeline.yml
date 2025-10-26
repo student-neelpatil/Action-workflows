@@ -9,6 +9,7 @@ on:
             - master
         types:
             - closed #status of pull request
+            - opened
     workflow_dispatch: # to ru workflow manually
 
 jobs:
